@@ -311,5 +311,18 @@
                 "unit": "1-4"
             }
         }
+    },
+    "hasta": {
+        "selflearningv2": {
+            "devices": [{
+                "model": "selflearningv2:hasta",
+                "brand": "Hasta",
+                "name": "Blinds (version 2)"
+            }],
+            "parameters": {
+                "house": "1-99999",
+                "unit": "1-16"
+            }
+        }
     }
 }
