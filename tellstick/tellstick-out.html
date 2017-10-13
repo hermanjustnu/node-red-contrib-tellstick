@@ -657,6 +657,12 @@ jqBody.on('click', '.telldus-invoke-method-link', function() {
 		} else if (data.method === 3) {
 			RED.notify(deviceName + ': bell called', 'success');
 		} else if (data.method === 4) {
+			RED.notify(deviceName + ': moved up', 'success');
+		} else if (data.method === 5) {
+			RED.notify(deviceName + ': moved down', 'success');
+		} else if (data.method === 6) {
+			RED.notify(deviceName + ': stopped', 'success');
+		} else if (data.method === 7) {
 			RED.notify(deviceName + ': learn command sent', 'success');
 		}
 

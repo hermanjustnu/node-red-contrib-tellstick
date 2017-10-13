@@ -59,8 +59,14 @@ function normalizeTellstickCommand(incomingMsg, node) {
 		msg.method = 2;
 	} else if (msg.method === 'bell' || msg.method === '3') {
 		msg.method = 3;
-	} else if (msg.method === 'learn' || msg.method === '4') {
+	} else if (msg.method === 'up' || msg.method === '4') {
 		msg.method = 4;
+	} else if (msg.method === 'down' || msg.method === '5') {
+		msg.method = 5;
+	} else if (msg.method === 'stop' || msg.method === '6') {
+		msg.method = 6;
+	} else if (msg.method === 'learn' || msg.method === '7') {
+		msg.method = 7;
 	} else {
 		msg.err = true;
 		msg.errWarnStr = "No valid method is supplied. Please select a method in the output node, or send a method in the msg: 'msg: {method: 'turnon'}'. Valid method are 'turnon' (or '1'), 'turnoff' (or '0'), 'dim' (or '2')'";

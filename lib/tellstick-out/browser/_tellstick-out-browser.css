@@ -41,6 +41,18 @@ a.telldus-button:hover {
     text-align: center;
 }
 
+.telldus-status-icon-up {
+    font-size: 15px;
+}
+
+.telldus-status-icon-down {
+    font-size: 15px;
+}
+
+.telldus-status-icon-stop {
+    font-size: 15px;
+}
+
 .telldus-status-icon-bell {
     font-size: 15px;
 }
