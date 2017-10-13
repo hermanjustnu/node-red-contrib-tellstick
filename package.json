@@ -1,5 +1,5 @@
 {
-  "name": "node-red-contrib-tellstick-local",
+  "name": "node-red-contrib-tellstick",
   "version": "2.1.4",
   "description": "Send/receive data to/from a Tellstick. Switch light off/on, listen to remotes/sensors.",
   "repository": {
