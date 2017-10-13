@@ -521,6 +521,12 @@ function statusObjToHTML(statusObj) {
 		return '<i class="fa fa-lightbulb-o telldus-status-icon-on telldus-status-icon"></i> On';
 	} else if (statusObj.name === 'DIM') {
 		return '<i class="fa fa-lightbulb-o telldus-status-icon-on telldus-status-icon"></i> ' + Math.round((statusObj.level / 255) * 100) + '%';
+	} else if (statusObj.name === 'UP') {
+		return '<i class="fa fa-arrow-up telldus-status-icon-on telldus-status-icon"></i> Up';
+	} else if (statusObj.name === 'DOWN') {
+		return '<i class="fa fa-arrow-down telldus-status-icon-on telldus-status-icon"></i> Down';
+	} else if (statusObj.name === 'STOP') {
+		return '<i class="fa fa-stop telldus-status-icon-on telldus-status-icon"></i> Stop';
 	} else {
 		return 'Unknown';
 	}
