@@ -556,6 +556,16 @@ function deviceObjToButtons(deviceObj) {
 		}
 	}
 
+	if (deviceObj.methods.up === true) {
+		strOut += '<a href="#" class="telldus-invoke-method-link" data-method="up" data-deviceid="' + deviceObj.id + '"><i class="fa fa-arrow-up telldus-status-icon-up telldus-status-icon telldus-status-icon-button"></i></a>';
+	}
+	if (deviceObj.methods.down === true) {
+		strOut += '<a href="#" class="telldus-invoke-method-link" data-method="down" data-deviceid="' + deviceObj.id + '"><i class="fa fa-arrow-down telldus-status-icon-down telldus-status-icon telldus-status-icon-button"></i></a>';
+	}
+	if (deviceObj.methods.stop === true) {
+		strOut += '<a href="#" class="telldus-invoke-method-link" data-method="stop" data-deviceid="' + deviceObj.id + '"><i class="fa fa-stop telldus-status-icon-stop telldus-status-icon telldus-status-icon-button"></i></a>';
+	}
+
 	if (deviceObj.methods.bell === true) {
 		strOut += '<a href="#" class="telldus-invoke-method-link" data-method="bell" data-deviceid="' + deviceObj.id + '"><i class="fa fa-bell-o telldus-status-icon-bell telldus-status-icon telldus-status-icon-button"></i></a>';
 	}
