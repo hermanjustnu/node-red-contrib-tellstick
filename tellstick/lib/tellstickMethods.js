@@ -92,6 +92,30 @@ function _invokeTellstickMethod(msg, cb) {
 			}
 		});
 	} else if (msg.method === 4) {
+		telldus.up(msg.device, function(err) {
+			if (err) {
+				(cb(err) || Function)();
+			} else {
+				(cb(null, { name: 'UP' }) || Function)();
+			}
+		});
+	} else if (msg.method === 5) {
+		telldus.down(msg.device, function(err) {
+			if (err) {
+				(cb(err) || Function)();
+			} else {
+				(cb(null, { name: 'DOWN' }) || Function)();
+			}
+		});
+	} else if (msg.method === 6) {
+		telldus.stop(msg.device, function(err) {
+			if (err) {
+				(cb(err) || Function)();
+			} else {
+				(cb(null, { name: 'STOP' }) || Function)();
+			}
+		});
+	} else if (msg.method === 7) {
 		telldus.learn(msg.device, function(err) {
 			if (err) {
 				(cb(err) || Function)();
